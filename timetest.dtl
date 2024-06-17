@@ -3,5 +3,5 @@ character (Basic): Yoyoyo
 	set {Friend} += 1
 	if {Friend} == 1:
 		character (Basic): We are friends!!!
-		[signal arg="ChnageSceneMoney"]
+		[signal arg="ChangeSceneMoney"]
 - No

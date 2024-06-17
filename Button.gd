@@ -12,4 +12,5 @@ func _process(delta):
 
 
 func _on_pressed():
-	Dialogic.start("timeline_Test")
+	get_tree().change_scene_to_file("res://Day1.tscn")
+	
