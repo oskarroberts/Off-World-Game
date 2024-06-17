@@ -1,3 +1,7 @@
-character (Basic): Yo Yo Yo 
+character (Basic): Yo Yo Yo
 - Hi [if {} == ""]
+	character: Uhhhhh
+	set {Friend} += 1
+	if {Friend} == 1:
+		We are friends! Yay!
 - Bye

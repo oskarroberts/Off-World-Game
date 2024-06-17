@@ -1,13 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgv4jfnlhhccy"]
+[gd_scene load_steps=3 format=3 uid="uid://bgv4jfnlhhccy"]
 
+[ext_resource type="Script" path="res://control.gd" id="1_dvskv"]
 [ext_resource type="Script" path="res://Button.gd" id="1_up4re"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(3, 66)
+script = ExtResource("1_dvskv")
 
 [node name="Button" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 325.0
+offset_top = 90.0
+offset_right = 744.0
+offset_bottom = 198.0
+text = "Start Game"
 script = ExtResource("1_up4re")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

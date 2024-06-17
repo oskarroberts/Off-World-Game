@@ -1,0 +1,7 @@
+character (Basic): Yoyoyo
+- Yo
+	set {Friend} += 1
+	if {Friend} == 1:
+		character (Basic): We are friends!!!
+		[signal arg="ChnageSceneMoney"]
+- No

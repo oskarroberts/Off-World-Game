@@ -25,10 +25,14 @@ directories/dch_directory={
 "character": "res://character.dch"
 }
 directories/dtl_directory={
-"timeline_Test": "res://timeline_Test.dtl"
+"timeline_Test": "res://timeline_Test.dtl",
+"timetest": "res://timetest.dtl"
 }
 layout/style_list=["res://Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
+variables={
+"Friend": 0
+}
 
 [editor]
 
