@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Off-World"
-run/main_scene="res://control.tscn"
+run/main_scene="res://Scenes/control.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,12 +22,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"character": "res://character.dch"
+"character": "res://Characters/character.dch"
 }
 directories/dtl_directory={
 "timetest": "res://timetest.dtl"
 }
-layout/style_list=["res://Style_Test.tres"]
+layout/style_list=["res://Styles/Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
 variables={
 "Friend": 0
@@ -49,6 +49,7 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+glossary/default_case_sensitive=true
 
 [editor]
 

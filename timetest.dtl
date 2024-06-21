@@ -1,7 +1,7 @@
-character (Basic): Yoyoyo
-- Yo
+character (Basic): \:
+- (
 	set {Friend} += 1
 	if {Friend} == 1:
-		character (Basic): We are friends!!!
-		[signal arg="ChangeSceneMoney"]
-- No
+		character (Basic): )
+		[signal arg="Moneyplus1"]
+- )
