@@ -13,6 +13,5 @@ var money = 0
 func _process(_delta):
 	pass
 func _on_dialogic_signal(argument: String):
-	if argument == "Moneyplus1": 
-		money += 1
-		print("()")
+	if argument == "UpdateValues": 
+		text = str(Dialogic.VAR.Money)

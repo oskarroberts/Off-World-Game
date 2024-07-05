@@ -1,7 +1,8 @@
-character (Basic): \:
+[style name="Style_Test"]
+\:
 - (
-	set {Friend} += 1
-	if {Friend} == 1:
+	set {Money} += 1
+	if {Money} == 1:
 		character (Basic): )
-		[signal arg="Moneyplus1"]
+		[signal arg="UpdateValues"]
 - )

@@ -1,10 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgv4jfnlhhccy"]
+[gd_scene load_steps=7 format=3 uid="uid://bgv4jfnlhhccy"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_wlv1o"]
+[ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="2_da2gn"]
 [ext_resource type="Script" path="res://Scripts/Button.gd" id="2_n7rhy"]
 [ext_resource type="Script" path="res://Label.gd" id="3_m2wbn"]
 
+[sub_resource type="Theme" id="Theme_v8qim"]
+default_base_scale = 4.0
+default_font = ExtResource("2_da2gn")
+default_font_size = 200
+Fonts/fonts/large = ExtResource("2_da2gn")
+
 [sub_resource type="LabelSettings" id="LabelSettings_olcey"]
+font_size = 30
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(3, 66)
@@ -17,15 +25,21 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="Control"]
-offset_left = 67.0
-offset_top = -30.0
-offset_right = 275.0
-offset_bottom = 134.0
+layout_mode = 0
+offset_left = 29.0
+offset_top = -41.0
+offset_right = 202.0
+offset_bottom = 53.0
+tooltip_text = "
+"
+theme = SubResource("Theme_v8qim")
+theme_override_fonts/font = ExtResource("2_da2gn")
+theme_override_font_sizes/font_size = 9
 label_settings = SubResource("LabelSettings_olcey")
 script = ExtResource("3_m2wbn")
 
 [node name="Button" type="Button" parent="Control"]
-visible = false
+layout_mode = 0
 offset_left = 325.0
 offset_top = 90.0
 offset_right = 744.0

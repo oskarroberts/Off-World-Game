@@ -30,7 +30,7 @@ directories/dtl_directory={
 layout/style_list=["res://Styles/Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
 variables={
-"Friend": 0
+"Money": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
