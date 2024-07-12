@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ev8w108t16kc"]
+[gd_scene load_steps=7 format=3 uid="uid://ev8w108t16kc"]
 
 [ext_resource type="Script" path="res://Styles/CenteredChoices/vn_choice_layer.gd" id="1_kurgw"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_choice_button.gd" id="1_w632k"]
-[ext_resource type="StyleBox" uid="uid://ccfm50ey01emi" path="res://Styles/Stylebox.tres" id="2_8yq6m"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Choice/node_button_sound.gd" id="2_mgko6"]
 [ext_resource type="AudioStream" uid="uid://b6c1p14bc20p1" path="res://addons/dialogic/Example Assets/sound-effects/typing1.wav" id="3_mql8i"]
 [ext_resource type="AudioStream" uid="uid://c2viukvbub6v6" path="res://addons/dialogic/Example Assets/sound-effects/typing4.wav" id="4_420fr"]
@@ -14,17 +13,14 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -485.0
-offset_top = -30.0
-offset_right = -485.0
-offset_bottom = -30.0
+offset_left = -479.0
+offset_top = -10.0
+offset_right = -481.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_kurgw")
-font_use_global = false
-font_size_use_global = false
-font_size_custom = 20
-boxes_stylebox_hovered = "res://Stylebox.tres"
 
 [node name="Choices" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -33,10 +29,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -88.0
-offset_top = -145.0
-offset_right = 62.0
-offset_bottom = 148.0
+offset_left = -86.5
+offset_top = -103.0
+offset_right = 86.5
+offset_bottom = 103.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -45,68 +41,56 @@ metadata/_edit_layout_mode = 1
 
 [node name="DialogicNode_ChoiceButton1" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton2" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton3" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton4" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton5" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton6" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton7" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton8" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton9" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton10" type="Button" parent="Choices"]
 layout_mode = 2
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
 [node name="DialogicNode_ChoiceButton11" type="Button" parent="Choices"]
 layout_mode = 2
-size_flags_stretch_ratio = 3.12
-theme_override_styles/normal = ExtResource("2_8yq6m")
 text = "Some text"
 script = ExtResource("1_w632k")
 
