@@ -1,8 +1,10 @@
 [style name="Style_Test"]
-\:
-- (
+Mainchar (default): Welcome to the first version of Off-World. Which variable would you like?
+- Money
 	set {Money} += 1
-	if {Money} == 1:
-		character (Basic): )
-		[signal arg="UpdateValues"]
-- )
+	Mainchar (default): Money it is then!
+	[signal arg="UpdateValues"]
+- Friendship
+	set {Friendship} += 1
+	Mainchar (default): Friendship... How wise
+	[signal arg="UpdateValues"]
