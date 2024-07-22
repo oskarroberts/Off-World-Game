@@ -1,10 +1,13 @@
 [style name="Style_Test"]
+[signal arg="UpdateValues"]
 Mainchar (default): Welcome to the first version of Off-World. Which variable would you like?
 - Money
 	set {Money} += 1
 	Mainchar (default): Money it is then!
 	[signal arg="UpdateValues"]
+	[wait_input]
 - Friendship
 	set {Friendship} += 1
 	Mainchar (default): Friendship... How wise
 	[signal arg="UpdateValues"]
+	[wait_input]
