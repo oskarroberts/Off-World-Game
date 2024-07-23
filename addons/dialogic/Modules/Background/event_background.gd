@@ -15,7 +15,7 @@ var scene: String = ""
 ## For the default scene it's the path to the image to show.
 var argument: String = ""
 ## The time the fade animation will take. Leave at 0 for instant change.
-var fade: float = 0.0
+var fade: float = 1.0
 ## Name of the transition to use.
 var transition: String = ""
 

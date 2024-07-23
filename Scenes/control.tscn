@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgv4jfnlhhccy"]
+[gd_scene load_steps=9 format=3 uid="uid://bgv4jfnlhhccy"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_wlv1o"]
 [ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="2_da2gn"]
 [ext_resource type="Script" path="res://Scripts/Button.gd" id="2_n7rhy"]
 [ext_resource type="Script" path="res://Label.gd" id="3_m2wbn"]
 [ext_resource type="Script" path="res://Scenes/Friendship.gd" id="4_o63q3"]
+[ext_resource type="Texture2D" uid="uid://ctc3q0j65uxte" path="res://Ui.png" id="6_wq3p8"]
 
 [sub_resource type="Theme" id="Theme_v8qim"]
 default_base_scale = 4.0
@@ -14,10 +15,18 @@ Fonts/fonts/large = ExtResource("2_da2gn")
 
 [sub_resource type="LabelSettings" id="LabelSettings_olcey"]
 font = ExtResource("2_da2gn")
+font_size = 30
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(3, 66)
 script = ExtResource("1_wlv1o")
+
+[node name="Ui" type="Sprite2D" parent="."]
+visibility_layer = 2
+z_index = -1
+position = Vector2(129, -23)
+scale = Vector2(0.351852, 0.333333)
+texture = ExtResource("6_wq3p8")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -26,52 +35,54 @@ offset_right = 40.0
 offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Money" type="Label" parent="Control"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 23.85
-anchor_top = -0.625
-anchor_right = 23.95
-anchor_bottom = -0.8
-offset_left = -6.10352e-05
-offset_top = -1.52588e-05
-offset_right = 110.0
-offset_bottom = 64.0
-tooltip_text = "
-"
-theme = SubResource("Theme_v8qim")
-theme_override_fonts/font = ExtResource("2_da2gn")
-theme_override_font_sizes/font_size = 9
-label_settings = SubResource("LabelSettings_olcey")
-script = ExtResource("3_m2wbn")
-metadata/_edit_use_anchors_ = true
-
 [node name="Friendship" type="Label" parent="Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 18.025
-anchor_top = -1.675
-anchor_right = 18.025
-anchor_bottom = -1.675
-offset_left = -1.0
-offset_top = 39.0
-offset_right = 133.0
-offset_bottom = 95.0
+anchor_left = 0.886765
+anchor_top = -1.88333
+anchor_right = 0.886765
+anchor_bottom = -1.88333
+offset_left = 81.5294
+offset_top = 29.3333
+offset_right = 128.529
+offset_bottom = 89.3333
 tooltip_text = "
 "
 theme = SubResource("Theme_v8qim")
 theme_override_fonts/font = ExtResource("2_da2gn")
 theme_override_font_sizes/font_size = 30
+text = "0"
 label_settings = SubResource("LabelSettings_olcey")
 script = ExtResource("4_o63q3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Money" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.575002
+anchor_top = -1.075
+anchor_right = 0.575002
+anchor_bottom = -1.075
+offset_left = -6.10352e-05
+offset_top = -1.52588e-05
+offset_right = 67.9999
+offset_bottom = 60.0
+tooltip_text = "0
+"
+theme = SubResource("Theme_v8qim")
+theme_override_fonts/font = ExtResource("2_da2gn")
+theme_override_font_sizes/font_size = 9
+text = "0"
+label_settings = SubResource("LabelSettings_olcey")
+script = ExtResource("3_m2wbn")
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 0
 offset_left = 325.0
-offset_top = 90.0
+offset_top = 172.0
 offset_right = 744.0
-offset_bottom = 198.0
+offset_bottom = 280.0
 text = "Start Game"
 script = ExtResource("2_n7rhy")
 

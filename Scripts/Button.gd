@@ -13,4 +13,4 @@ func _process(delta):
 
 func _on_pressed():
 	Dialogic.start("timetest")
-	
+	self.visible = false
