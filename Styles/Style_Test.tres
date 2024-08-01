@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="DialogicStyle" load_steps=15 format=3 uid="uid://b7ln0o5wpsexl"]
 
-[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="1_ohrac"]
+[ext_resource type="PackedScene" path="res://Styles/FullBackground/custom_full_background_layer.tscn" id="1_yjt6d"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_mdyiu"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_md1cf"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_cl32n"]
@@ -11,7 +11,7 @@
 
 [sub_resource type="Resource" id="Resource_5eoo4"]
 script = ExtResource("2_mdyiu")
-scene = ExtResource("1_ohrac")
+scene = ExtResource("1_yjt6d")
 overrides = {}
 
 [sub_resource type="Resource" id="Resource_f01sd"]
@@ -56,4 +56,4 @@ script = ExtResource("10_o54p0")
 name = "Style_Test"
 base_overrides = {}
 layers = Array[ExtResource("2_mdyiu")]([SubResource("Resource_5eoo4"), SubResource("Resource_f01sd"), SubResource("Resource_wml2b"), SubResource("Resource_82bhg"), SubResource("Resource_xhs83"), SubResource("Resource_bvuqd")])
-metadata/_latest_layer = 5
+metadata/_latest_layer = 0

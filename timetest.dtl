@@ -1,5 +1,5 @@
 [style name="Style_Test"]
-[background arg="res://OFF-WORLD.png" fade="0.0"]
+[background scene="res://Styles/FullBackground/custom_full_background_layer.tscn" arg="res://OFF-WORLD.png" fade="1.0"]
 [signal arg="UpdateValues"]
 Mainchar (default): Welcome to the first version of Off-World. Which variable would you like?
 - Money
@@ -7,8 +7,10 @@ Mainchar (default): Welcome to the first version of Off-World. Which variable wo
 	Mainchar (default): Money it is then!
 	[signal arg="UpdateValues"]
 	[wait_input]
+	[end_timeline]
 - Friendship
 	set {Friendship} += 1
 	Mainchar (default): Friendship... How wise
 	[signal arg="UpdateValues"]
 	[wait_input]
+	[end_timeline]
