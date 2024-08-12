@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0ghroqeq44er"
-path="res://.godot/imported/OFF-WORLD.png-96022697cb9092fc944ca4bf5d061d65.ctex"
+uid="uid://obd3bt6vcd26"
+path="res://.godot/imported/MusicBox.png-f467281165c19cc6c3ceabdd4c5c549d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://OFF-WORLD.png"
-dest_files=["res://.godot/imported/OFF-WORLD.png-96022697cb9092fc944ca4bf5d061d65.ctex"]
+source_file="res://MusicBox.png"
+dest_files=["res://.godot/imported/MusicBox.png-f467281165c19cc6c3ceabdd4c5c549d.ctex"]
 
 [params]
 

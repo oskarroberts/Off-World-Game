@@ -26,6 +26,7 @@ directories/dch_directory={
 "character": "res://Characters/character.dch"
 }
 directories/dtl_directory={
+"Day1": "res://Timelines/Day1.dtl",
 "timetest": "res://timetest.dtl"
 }
 layout/style_list=["res://Styles/Style_Test.tres"]

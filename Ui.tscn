@@ -1,9 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://da201wcqdikxl"]
+[gd_scene load_steps=8 format=3 uid="uid://da201wcqdikxl"]
 
 [ext_resource type="Texture2D" uid="uid://ctc3q0j65uxte" path="res://Ui.png" id="1_b1hvk"]
 [ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="2_82g55"]
 [ext_resource type="Script" path="res://Scenes/Friendship.gd" id="3_3xd2m"]
 [ext_resource type="Script" path="res://Label.gd" id="4_t0tnn"]
+
+[sub_resource type="GDScript" id="GDScript_n2drd"]
+script/source = "extends CanvasLayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	self.visible = false
+"
 
 [sub_resource type="Theme" id="Theme_v8qim"]
 default_base_scale = 4.0
@@ -17,6 +31,7 @@ font_size = 30
 
 [node name="CanvasLayer" type="CanvasLayer"]
 layer = 2
+script = SubResource("GDScript_n2drd")
 
 [node name="Ui" type="Sprite2D" parent="."]
 visibility_layer = 2

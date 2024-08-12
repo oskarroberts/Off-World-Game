@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4qxojbmp2bbv"]
+
+[ext_resource type="Script" path="res://Scenes/mainmenu.gd" id="1_7xu53"]
+[ext_resource type="Script" path="res://Scripts/Button.gd" id="1_gh5xe"]
+[ext_resource type="PackedScene" uid="uid://38va2kr27v1w" path="res://Scenes/Day1.tscn" id="2_ifwow"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7xu53")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 172.0
+offset_right = 744.0
+offset_bottom = 280.0
+text = "Start Game"
+script = ExtResource("1_gh5xe")
+newscene = ExtResource("2_ifwow")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

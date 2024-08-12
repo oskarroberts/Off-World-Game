@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_cl32n"]
 [ext_resource type="PackedScene" uid="uid://ev8w108t16kc" path="res://Styles/CenteredChoices/custom_vn_choice_layer.tscn" id="5_k7sch"]
 [ext_resource type="PackedScene" uid="uid://50bop5ny461x" path="res://Styles/TextboxWithPortrait/custom_textbox_with_speaker_portrait.tscn" id="7_4kk8p"]
-[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="7_y7p8l"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://Styles/FullBackground/custom_full_background_layer.tscn" id="7_y7p8l"]
 [ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="9_wx2iw"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_o54p0"]
 
@@ -32,7 +32,8 @@ overrides = {
 "box_panel": "\"res://new_style_box_flat.tres\"",
 "custom_normal_font": "\"res://vg-5000-master/vg5000-master/fonts/webfonts/VG5000-Regular_web.ttf\"",
 "name_label_customfont": "\"res://vg-5000-master/vg5000-master/fonts/webfonts/VG5000-Regular_web.ttf\"",
-"name_label_use_global_font": "false"
+"name_label_use_global_font": "false",
+"text_custom_size": "20.0"
 }
 
 [sub_resource type="Resource" id="Resource_bvuqd"]
@@ -52,4 +53,4 @@ base_overrides = {
 "canvas_layer": "0.0"
 }
 layers = Array[ExtResource("2_mdyiu")]([SubResource("Resource_m41ys"), SubResource("Resource_wml2b"), SubResource("Resource_82bhg"), SubResource("Resource_xhs83"), SubResource("Resource_bvuqd")])
-metadata/_latest_layer = 1
+metadata/_latest_layer = 3

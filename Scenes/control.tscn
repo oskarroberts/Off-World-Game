@@ -1,21 +1,88 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgv4jfnlhhccy"]
+[gd_scene load_steps=14 format=3 uid="uid://bgv4jfnlhhccy"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_wlv1o"]
-[ext_resource type="Script" path="res://Scripts/Button.gd" id="2_n7rhy"]
+[ext_resource type="Script" path="res://Scripts/Ui.gd" id="3_i06ku"]
+[ext_resource type="Script" path="res://Scripts/Button.gd" id="3_xfyyj"]
 [ext_resource type="PackedScene" uid="uid://da201wcqdikxl" path="res://Ui.tscn" id="3_ypb60"]
+[ext_resource type="PackedScene" uid="uid://38va2kr27v1w" path="res://Scenes/Day1.tscn" id="4_mpuug"]
+[ext_resource type="Script" path="res://Scenes/CanvasLayer2.gd" id="6_jq058"]
+[ext_resource type="Texture2D" uid="uid://obd3bt6vcd26" path="res://MusicBox.png" id="7_wojke"]
+[ext_resource type="FontFile" uid="uid://dfkkov2up8vcq" path="res://vg-5000-master/vg5000-master/fonts/webfonts/VG5000-Regular_web.otf" id="8_p6ayf"]
+[ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="9_4xtsi"]
+[ext_resource type="Texture2D" uid="uid://d0ghroqeq44er" path="res://Resources/OFF-WORLD.png" id="10_pgy64"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_10xyv"]
+font = ExtResource("8_p6ayf")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_d058n"]
+font = ExtResource("8_p6ayf")
+font_size = 32
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ao6d"]
+font = ExtResource("9_4xtsi")
+font_size = 74
+shadow_size = 12
+shadow_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(43, 142)
 script = ExtResource("1_wlv1o")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 325.0
-offset_top = 172.0
-offset_right = 744.0
-offset_bottom = 280.0
-text = "Start Game"
-script = ExtResource("2_n7rhy")
-
 [node name="CanvasLayer" parent="." instance=ExtResource("3_ypb60")]
+script = ExtResource("3_i06ku")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+script = ExtResource("6_jq058")
+
+[node name="Button" type="Button" parent="CanvasLayer2"]
+offset_left = 349.0
+offset_top = 359.0
+offset_right = 768.0
+offset_bottom = 467.0
+text = "Start Game"
+script = ExtResource("3_xfyyj")
+newscene = ExtResource("4_mpuug")
+
+[node name="MusicBox" type="Sprite2D" parent="CanvasLayer2"]
+position = Vector2(1033, 40)
+scale = Vector2(0.370313, 0.329167)
+texture = ExtResource("7_wojke")
+
+[node name="Label3" type="Label" parent="CanvasLayer2"]
+offset_left = 978.0
+offset_top = 15.0
+offset_right = 1126.0
+offset_bottom = 64.0
+text = "Algorhythm - 
+Defenestration"
+label_settings = SubResource("LabelSettings_10xyv")
+
+[node name="Label2" type="Label" parent="CanvasLayer2"]
+offset_left = 390.0
+offset_top = 206.0
+offset_right = 766.0
+offset_bottom = 239.0
+text = "By Oskar \"Lwinner\" Roberts"
+label_settings = SubResource("LabelSettings_d058n")
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+offset_left = 392.0
+offset_top = 114.0
+offset_right = 752.0
+offset_bottom = 203.0
+text = "OFF WORLD
+"
+label_settings = SubResource("LabelSettings_1ao6d")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2"]
+z_index = -3
+position = Vector2(578, 321)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_pgy64")
+
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2/Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2" method="_on_button_pressed"]
