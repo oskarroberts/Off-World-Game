@@ -8,8 +8,9 @@
 [ext_resource type="Script" path="res://Scenes/CanvasLayer2.gd" id="6_jq058"]
 [ext_resource type="Texture2D" uid="uid://obd3bt6vcd26" path="res://MusicBox.png" id="7_wojke"]
 [ext_resource type="FontFile" uid="uid://dfkkov2up8vcq" path="res://vg-5000-master/vg5000-master/fonts/webfonts/VG5000-Regular_web.otf" id="8_p6ayf"]
-[ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="9_4xtsi"]
+[ext_resource type="AudioStream" uid="uid://cnny3dkkwqk1t" path="res://Resources/defenestration - algorhythm.wav" id="10_j6n1d"]
 [ext_resource type="Texture2D" uid="uid://d0ghroqeq44er" path="res://Resources/OFF-WORLD.png" id="10_pgy64"]
+[ext_resource type="Script" path="res://Scenes/Defenestration.gd" id="11_6mr3h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_10xyv"]
 font = ExtResource("8_p6ayf")
@@ -19,12 +20,6 @@ font_size = 22
 font = ExtResource("8_p6ayf")
 font_size = 32
 shadow_size = 5
-shadow_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_1ao6d"]
-font = ExtResource("9_4xtsi")
-font_size = 74
-shadow_size = 12
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
@@ -61,21 +56,12 @@ Defenestration"
 label_settings = SubResource("LabelSettings_10xyv")
 
 [node name="Label2" type="Label" parent="CanvasLayer2"]
-offset_left = 390.0
-offset_top = 206.0
-offset_right = 766.0
-offset_bottom = 239.0
+offset_left = 373.0
+offset_top = 314.0
+offset_right = 749.0
+offset_bottom = 347.0
 text = "By Oskar \"Lwinner\" Roberts"
 label_settings = SubResource("LabelSettings_d058n")
-
-[node name="Label" type="Label" parent="CanvasLayer2"]
-offset_left = 392.0
-offset_top = 114.0
-offset_right = 752.0
-offset_bottom = 203.0
-text = "OFF WORLD
-"
-label_settings = SubResource("LabelSettings_1ao6d")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2"]
 z_index = -3
@@ -83,6 +69,12 @@ position = Vector2(578, 321)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("10_pgy64")
 
+[node name="Defenestration" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_j6n1d")
+autoplay = true
+script = ExtResource("11_6mr3h")
+
 [connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer" method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2/Button" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2/Button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="Defenestration" method="_on_button_pressed"]
