@@ -6,4 +6,9 @@ Soon he shall wake, to enjoy the last 3 days before his departure.
 [background arg="res://Resources/HomeFinal-1.png.png" fade="1.0"]
 Mainchar (default): ...
 Mainchar: ... Ah!
-Mainchar: <Empty Text Event>
+Mainchar: Sigh... Only 3 days before I go Off-World™. 
+Mainchar: Mom and Dad want me to work so I can have some starting funds when I arrive but... I feel like conections to home might be just as important Off-World™
+Mainchar: Which should I choose? Friends or Work?
+- Friends
+	jump 
+- Work

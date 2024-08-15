@@ -27,7 +27,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Day1": "res://Timelines/Day1.dtl",
-"timetest": "res://timetest.dtl"
+"timetest": "res://timetest.dtl",
+"work": "res://Timelines/work.dtl"
 }
 layout/style_list=["res://Styles/Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
