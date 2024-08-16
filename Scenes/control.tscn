@@ -1,16 +1,39 @@
-[gd_scene load_steps=14 format=3 uid="uid://bgv4jfnlhhccy"]
+[gd_scene load_steps=21 format=3 uid="uid://bgv4jfnlhhccy"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_wlv1o"]
 [ext_resource type="Script" path="res://Scripts/Ui.gd" id="3_i06ku"]
 [ext_resource type="Script" path="res://Scripts/Button.gd" id="3_xfyyj"]
-[ext_resource type="PackedScene" uid="uid://da201wcqdikxl" path="res://Ui.tscn" id="3_ypb60"]
+[ext_resource type="FontFile" uid="uid://cax18b83yt16p" path="res://vg-5000-master/vg5000-master/fonts/VG5000-Regular.otf" id="4_2ng26"]
 [ext_resource type="PackedScene" uid="uid://38va2kr27v1w" path="res://Scenes/Day1.tscn" id="4_mpuug"]
+[ext_resource type="Script" path="res://Scenes/Friendship.gd" id="5_0wka5"]
+[ext_resource type="Texture2D" uid="uid://ctc3q0j65uxte" path="res://Ui.png" id="6_h7eh4"]
 [ext_resource type="Script" path="res://Scenes/CanvasLayer2.gd" id="6_jq058"]
+[ext_resource type="Script" path="res://Label.gd" id="6_lkgxa"]
 [ext_resource type="Texture2D" uid="uid://obd3bt6vcd26" path="res://MusicBox.png" id="7_wojke"]
 [ext_resource type="FontFile" uid="uid://dfkkov2up8vcq" path="res://vg-5000-master/vg5000-master/fonts/webfonts/VG5000-Regular_web.otf" id="8_p6ayf"]
 [ext_resource type="AudioStream" uid="uid://cnny3dkkwqk1t" path="res://Resources/defenestration - algorhythm.wav" id="10_j6n1d"]
 [ext_resource type="Texture2D" uid="uid://d0ghroqeq44er" path="res://Resources/OFF-WORLD.png" id="10_pgy64"]
 [ext_resource type="Script" path="res://Scenes/Defenestration.gd" id="11_6mr3h"]
+
+[sub_resource type="Theme" id="Theme_t13ut"]
+default_base_scale = 4.0
+default_font = ExtResource("4_2ng26")
+default_font_size = 200
+Fonts/fonts/large = ExtResource("4_2ng26")
+
+[sub_resource type="LabelSettings" id="LabelSettings_27phu"]
+font = ExtResource("4_2ng26")
+font_size = 30
+
+[sub_resource type="Theme" id="Theme_civod"]
+default_base_scale = 4.0
+default_font = ExtResource("4_2ng26")
+default_font_size = 200
+Fonts/fonts/large = ExtResource("4_2ng26")
+
+[sub_resource type="LabelSettings" id="LabelSettings_an4s1"]
+font = ExtResource("4_2ng26")
+font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_10xyv"]
 font = ExtResource("8_p6ayf")
@@ -26,8 +49,55 @@ shadow_color = Color(0, 0, 0, 1)
 position = Vector2(43, 142)
 script = ExtResource("1_wlv1o")
 
-[node name="CanvasLayer" parent="." instance=ExtResource("3_ypb60")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 4
 script = ExtResource("3_i06ku")
+
+[node name="Friendship" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.886765
+anchor_top = -1.88333
+anchor_right = 0.886765
+anchor_bottom = -1.88333
+offset_left = -1010.55
+offset_top = 1222.4
+offset_right = -963.555
+offset_bottom = 1282.4
+tooltip_text = "
+"
+theme = SubResource("Theme_t13ut")
+theme_override_fonts/font = ExtResource("4_2ng26")
+theme_override_font_sizes/font_size = 30
+text = "0"
+label_settings = SubResource("LabelSettings_27phu")
+script = ExtResource("5_0wka5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Money" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.575002
+anchor_top = -1.075
+anchor_right = 0.556773
+anchor_bottom = -1.10895
+offset_left = -593.402
+offset_top = 699.6
+offset_right = -525.402
+offset_bottom = 759.6
+tooltip_text = "0
+"
+theme = SubResource("Theme_civod")
+theme_override_fonts/font = ExtResource("4_2ng26")
+theme_override_font_sizes/font_size = 9
+text = "0"
+label_settings = SubResource("LabelSettings_an4s1")
+script = ExtResource("6_lkgxa")
+metadata/_edit_use_anchors_ = true
+
+[node name="Ui" type="Sprite2D" parent="CanvasLayer"]
+z_index = -1
+position = Vector2(75, 25)
+scale = Vector2(0.203704, 0.177083)
+texture = ExtResource("6_h7eh4")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 script = ExtResource("6_jq058")
@@ -64,6 +134,7 @@ text = "By Oskar \"Lwinner\" Roberts"
 label_settings = SubResource("LabelSettings_d058n")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2"]
+visible = false
 z_index = -3
 position = Vector2(578, 321)
 scale = Vector2(0.6, 0.6)
@@ -74,7 +145,8 @@ stream = ExtResource("10_j6n1d")
 autoplay = true
 script = ExtResource("11_6mr3h")
 
-[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer/Friendship" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer/Money" method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2" method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Button" to="CanvasLayer2/Button" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer2/Button" to="Defenestration" method="_on_button_pressed"]

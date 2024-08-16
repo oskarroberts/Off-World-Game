@@ -1,1 +1,5 @@
-[background arg="res://Resources/HomeFinal-1.png.png" fade="1.0"]
+[background arg="res://WorkShop-1.png.png" fade="1.0"]
+Mainchar (default): Another day at work... Nothing interesting happens here usually, and today seems like every other day
+boss: LUKAS! Here's your pary for today. You didnt do anything spectacular so youll get the average rate. Perhaps days in the future will give you more opportunities...
+set {Money} += 1
+[signal arg="UpdateValues"]
