@@ -7,7 +7,6 @@ func _ready():
 	
 
 #Money signal receive
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
 func _on_dialogic_signal(argument: String):

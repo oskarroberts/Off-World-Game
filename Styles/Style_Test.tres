@@ -50,7 +50,7 @@ overrides = {
 script = ExtResource("10_o54p0")
 name = "Style_Test"
 base_overrides = {
-"canvas_layer": "0.0"
+"canvas_layer": "-1.0"
 }
 layers = Array[ExtResource("2_mdyiu")]([SubResource("Resource_m41ys"), SubResource("Resource_wml2b"), SubResource("Resource_82bhg"), SubResource("Resource_xhs83"), SubResource("Resource_bvuqd")])
-metadata/_latest_layer = 3
+metadata/_latest_layer = -1

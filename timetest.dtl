@@ -6,11 +6,11 @@ Mainchar (default): Welcome to the first version of Off-World. Which variable wo
 	set {Money} += 1
 	Mainchar (default): Money it is then!
 	[signal arg="UpdateValues"]
+	...
 	[wait_input]
-	[end_timeline]
 - Friendship
 	set {Friendship} += 1
-	Mainchar (default): Friendship... How wise
 	[signal arg="UpdateValues"]
+	Mainchar (default): Friendship... How wise
+	...
 	[wait_input]
-	[end_timeline]
