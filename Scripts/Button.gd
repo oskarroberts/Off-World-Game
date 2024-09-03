@@ -14,4 +14,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	Dialogic.start_timeline("timetest")
+	Dialogic.start_timeline("Day1")

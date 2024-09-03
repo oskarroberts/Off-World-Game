@@ -1,0 +1,10 @@
+[background arg="res://Resources/Blackground.png" fade="1.0"]
+[background arg="res://Resources/Park.png" fade="1.0"]
+Mainchar (default): (Finally at the park, now where are my friends...)
+Friends: Lukas! Over Here!
+Mainchar: (I hung out with my friends for a while. The normality was comforting but perhaps something more interesting might happen in the soon future)
+set {Friendship} += 1
+[signal arg="UpdateValues"]
+Mainchar: (Ah, I'm beat. Straight home and to bed immediately)
+if {Day2} == 1:
+	jump Day2/

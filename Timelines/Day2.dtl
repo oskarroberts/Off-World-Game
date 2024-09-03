@@ -1,0 +1,20 @@
+[background arg="res://Resources/OFF-WORLD.png" fade="1.0"]
+When interspace travel was invented man stepped boldly onto their new hpomes only to find out\: They were terrible. Nobody wanted to live on another planet due to the shocking lack of infrastructure.
+Now we have arrived at the current era. Overpopulation threatens earth every year and so everyone unable to afford living on earth is shipped off as soon as they can do so without parents present. Lukas's parents are lucky enough to be considered essential but the same privilege does not apply to him.
+Off-World™ are merely the luckiest and cheapest company and as such the government have hired them to move the people. Why has threre been no revolt against this injustice? The everyman is poor and there are jobs Off-World™.
+It's almost time to awake yet again...
+Mainchar (default): Ugh...
+Mainchar (default): Two days to go... just the thought fills me with anxiety
+set {Day2} = 1
+if {Friendship} >= 1:
+	Mainchar (default): I hung out with my friends yesterday... should I see them again?
+	- Friends
+		jump friendhangout/
+	- Work
+		jump work/
+if {Money} >= 1:
+	Mainchar (default): I worked yesterday... Should I do it again...
+	- Friends
+		jump friendhangout/
+	- Work
+		jump work/

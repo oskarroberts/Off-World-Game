@@ -22,6 +22,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Friends": "res://Resources/Friends.dch",
 "Mainchar": "res://Characters/Mainchar.dch",
 "boss": "res://Characters/boss.dch",
 "character": "res://Characters/character.dch",
@@ -29,6 +30,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Day1": "res://Timelines/Day1.dtl",
+"Day2": "res://Timelines/Day2.dtl",
+"FriendsUnique": "res://Timelines/FriendsUnique.dtl",
 "friendhangout": "res://Timelines/friendhangout.dtl",
 "timetest": "res://timetest.dtl",
 "work": "res://Timelines/work.dtl"
@@ -36,6 +39,7 @@ directories/dtl_directory={
 layout/style_list=["res://Styles/Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
 variables={
+"Day2": 0,
 "Friendship": 0.0,
 "Money": 0.0
 }
