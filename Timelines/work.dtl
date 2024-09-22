@@ -3,6 +3,7 @@
 Mainchar (default): Another day at work... Nothing interesting happens here usually, and today seems like every other day
 boss: LUKAS! Here's your pay for today. You didnt do anything spectacular so youll get the average rate. Perhaps days in the future will give you more opportunities...
 set {Money} += 1
+set {Work} = 1
 [signal arg="UpdateValues"]
 Mainchar (default): (the day is finally over thank god. Straight to bed when I get home)
 if {Day2} < 1:

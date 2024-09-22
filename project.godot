@@ -31,7 +31,9 @@ directories/dch_directory={
 directories/dtl_directory={
 "Day1": "res://Timelines/Day1.dtl",
 "Day2": "res://Timelines/Day2.dtl",
+"Day3": "res://Timelines/Day3.dtl",
 "FriendsUnique": "res://Timelines/FriendsUnique.dtl",
+"WorkUnique": "res://Timelines/WorkUnique.dtl",
 "friendhangout": "res://Timelines/friendhangout.dtl",
 "timetest": "res://timetest.dtl",
 "work": "res://Timelines/work.dtl"
@@ -40,8 +42,10 @@ layout/style_list=["res://Styles/Style_Test.tres"]
 layout/default_style="res://Style_Test.tres"
 variables={
 "Day2": 0,
+"Friendhang": 0,
 "Friendship": 0.0,
-"Money": 0.0
+"Money": 0.0,
+"Work": 0
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

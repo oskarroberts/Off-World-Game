@@ -1,0 +1,10 @@
+[background arg="res://Resources/Park.png" fade="1.0"]
+Something feels different about today...
+Friends: Hey Lukas! Instead of hanging at the park today why dont we spend some time at your house!
+[background arg="res://Resources/HomeFinal-1.png.png" fade="1.0"]
+(A long day passes quickly at Lukas's house)
+Friends: Lukas we're going to miss you buddy. I know we're able to communicate digitally but it just wont be the same without you. We haven't been the best friends to those that went Off-World™ before you and i think we'd like to change that. 
+Friends: We wont ever forget you Lukas, you're our friend.
+(The others soon departed leaving Lukas to his slumber)
+set {Friendship} += 2
+jump Day3/

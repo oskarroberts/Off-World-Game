@@ -3,14 +3,14 @@
 [signal arg="UpdateValues"]
 In the far future, Earth has reached its maximum capacity. Those rich (or important enough) may stay on earth whereas those considered undesirable will be shipped... Off-World.
 Thus we are brought to our protagonist, a young man named Lukas who upon turning 18 will be forced to leave his home-planet with nothing but his possesions and the connections he has made.
-Soon he shall wake, to enjoy the last 3 days before his departure.
+Soon he shall wake, to enjoy the last 2 days before his departure.
 [background arg="res://Resources/HomeFinal-1.png.png" fade="1.0"]
 Mainchar (default): ...
 Mainchar: ... Ah!
-Mainchar: Sigh... Only 3 days before I go Off-World™.
+Mainchar: Sigh... Only 2 days before I go Off-World™.
 Mainchar: Mom and Dad want me to work so I can have some starting funds when I arrive but... I feel like conections to home might be just as important Off-World™
 Mainchar: Which should I choose? Friends or Work?
 - Friends
 	jump friendhangout/
 - Work
-	jump work/
+	jump WorkUnique/

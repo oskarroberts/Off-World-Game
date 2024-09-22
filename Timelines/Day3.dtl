@@ -1,0 +1,8 @@
+if {Money} > {Friendship}:
+	[signal arg="HideUI"]
+if {Friendship} > {Money}:
+	[signal arg="HideUI"]
+if {Money} == {Friendship}:
+	[signal arg="HideUI"]
+	if {Money} == 1:
+	if {Money} == 2:

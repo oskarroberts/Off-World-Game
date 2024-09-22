@@ -4,6 +4,7 @@ Mainchar (default): (Finally at the park, now where are my friends...)
 Friends: Lukas! Over Here!
 Mainchar: (I hung out with my friends for a while. The normality was comforting but perhaps something more interesting might happen in the soon future)
 set {Friendship} += 1
+set {Friendhang} = 1
 [signal arg="UpdateValues"]
 Mainchar: (Ah, I'm beat. Straight home and to bed immediately)
 if {Day2} == 1:
