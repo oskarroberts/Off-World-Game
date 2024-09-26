@@ -1,7 +1,9 @@
-Perhaps in another story this setup couldve been inspiring. Perhaps Lukas is bravely pursuing a new home, perhaps he leads a revolution to stop this injustice but inthis story Lukas is no more than a boy, leaving home for the first and last time.
+Perhaps in another story this setup couldve been inspiring. Perhaps Lukas is bravely pursuing a new home, perhaps he leads a revolution to stop this injustice with the help of his friends, but in this story Lukas is no more than a boy leaving home for the first and last time.
 Shall we see how the end of this story plays out?
+[background arg="res://Resources/OFF-WORLD.png" fade="1.0"]
 if {Money} > {Friendship}:
 	[signal arg="HideUI"]
+	With his riches gained through working and a little extra from his parents Lukas had a very easy start to life Off-World. However, without connections to his home Off-World he became disconnected and wouldnt make any more friends in his new world. A sad and shallow life.
 if {Friendship} > {Money}:
 	[signal arg="HideUI"]
 if {Money} == {Friendship}:
