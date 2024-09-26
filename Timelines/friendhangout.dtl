@@ -7,5 +7,4 @@ set {Friendship} += 1
 set {Friendhang} = 1
 [signal arg="UpdateValues"]
 Mainchar: (Ah, I'm beat. Straight home and to bed immediately)
-if {Day2} == 1:
-	jump Day2/
+jump Day2/

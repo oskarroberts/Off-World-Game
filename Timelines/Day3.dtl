@@ -1,3 +1,5 @@
+Perhaps in another story this setup couldve been inspiring. Perhaps Lukas is bravely pursuing a new home, perhaps he leads a revolution to stop this injustice but inthis story Lukas is no more than a boy, leaving home for the first and last time.
+Shall we see how the end of this story plays out?
 if {Money} > {Friendship}:
 	[signal arg="HideUI"]
 if {Friendship} > {Money}:

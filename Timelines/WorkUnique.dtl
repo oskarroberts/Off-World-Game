@@ -1,0 +1,11 @@
+[background arg="res://Resources/Blackground.png" fade="1.0"]
+[background arg="res://Resources/WorkShop-1.png.png" fade="1.0"]
+Mainchar: Another day at work... Perhaps something unique will happen today?
+(Hours pass uneventfully until..)
+boss: Stop! Thief! 
+(Through sheer dumb luck Lukas extends his foot, tripping the rogue)
+boss: Good save Lukas! Looks like this guy was camping illegally here even though he wasnt useful. We'll ship him right off world on the next ship.
+boss: Thanks to your good work we've saved a good amount of money so I'll up your pay for the day.
+set {Money} += 2
+Mainchar: (It doesn't feel good but I'll take it... Straight home I think)
+jump Day2/

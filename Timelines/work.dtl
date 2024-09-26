@@ -6,6 +6,4 @@ set {Money} += 1
 set {Work} = 1
 [signal arg="UpdateValues"]
 Mainchar (default): (the day is finally over thank god. Straight to bed when I get home)
-if {Day2} < 1:
-	jump Day2/
-if {Day2} == 1:
+jump Day3/
