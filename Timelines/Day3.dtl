@@ -6,7 +6,10 @@ if {Money} > {Friendship}:
 	With his riches gained through working and a little extra from his parents Lukas had a very easy start to life Off-World. However, without connections to his home Off-World he became disconnected and wouldnt make any more friends in his new world. A sad and shallow life.
 if {Friendship} > {Money}:
 	[signal arg="HideUI"]
+	While rich in friendship Lukas remained a pooron for the rest of his life. He constantly struggled with money leaving less time to contact the friends he loved so much and while happy, lived a shoddy life.
 if {Money} == {Friendship}:
 	[signal arg="HideUI"]
 	if {Money} == 1:
+		Lukas's life was terrible Off-World. With a small amount of money and no real connections wit his friends he was miserable for the rest of his days. The most he got was a mispelled postcard from his parents he would have to read in a molding apartment.
 	if {Money} == 2:
+		<Empty Text Event>
